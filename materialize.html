@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materialize | GlowCycle Refill Bar</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Materialize CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <style>
+    body {
+      background-color: #f4fbf8;
+    }
+
+    .materialize-header {
+      background: #b2dfdb;
+      border-bottom: 3px solid #80cbc4;
+    }
+
+    .section-space {
+      padding: 50px 0;
+    }
+
+    .card-image img {
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .materialize-hero {
+      background: #e0f2f1;
+      border-radius: 16px;
+      padding: 30px;
+    }
+
+    .video-wrapper {
+      margin-top: 20px;
+    }
+
+    .custom-note {
+      background: #ffffff;
+      border-left: 5px solid #26a69a;
+      padding: 16px;
+      border-radius: 10px;
+    }
+
+    .circle-profile {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="materialize-header">
+    <h1>GlowCycle Refill Bar</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="menu.html">Menu</a> |
+      <a href="materialize.html">Materialize</a> |
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section-space">
+      <div class="container materialize-hero z-depth-1">
+        <h2 class="teal-text text-darken-3">GlowCycle with Materialize</h2>
+        <p>
+          This page was built with Materialize to create a more modern and responsive
+          layout while still matching GlowCycle’s sustainable skincare theme.
+          The design uses Materialize color classes, cards, a circular image,
+          and a responsive video embed.
+        </p>
+        <a class="waves-effect waves-light btn teal darken-2" href="#products">Explore Products</a>
+      </div>
+    </section>
+
+    <section id="products" class="section-space">
+      <div class="container">
+        <h2 class="center teal-text text-darken-3">Popular Refill Products</h2>
+        <div class="row">
+
+          <div class="col s12 m6 l4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="images/GlowCycle-img1.png" alt="GlowCycle refill bar display">
+              </div>
+              <div class="card-content">
+                <span class="card-title">Refill Cleanser</span>
+                <p>
+                  Gentle cleansing formulas that remove buildup while keeping skin balanced
+                  and hydrated.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="images/GlowCycle-img2.png" alt="Customer refilling skincare bottle">
+              </div>
+              <div class="card-content">
+                <span class="card-title">Brightening Serum</span>
+                <p>
+                  Lightweight refillable serums designed to support glow, clarity,
+                  and smoother-looking skin.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m6 l4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="images/GlowCycle-img3.png" alt="GlowCycle product selection">
+              </div>
+              <div class="card-content">
+                <span class="card-title">Barrier Moisturizer</span>
+                <p>
+                  Refillable moisturizers that help support the skin barrier
+                  and lock in hydration.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space teal lighten-5">
+      <div class="container">
+        <h2 class="center teal-text text-darken-3">Circular Image Feature</h2>
+        <div class="row">
+          <div class="col s12 m8 offset-m2 center">
+            <img src="images/GlowCycle-img2.png" alt="GlowCycle team member" class="circle responsive-img circle-profile z-depth-2">
+            <div class="custom-note">
+              <p>
+                GlowCycle encourages customers to make simple changes that reduce waste
+                over time. Refillable skincare makes sustainability feel practical,
+                accessible, and easy to maintain in everyday routines.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space">
+      <div class="container">
+        <h2 class="center teal-text text-darken-3">Responsive Video Embed</h2>
+        <p class="center">
+          This embedded video uses Materialize’s media styling so it stays responsive
+          across different screen sizes.
+        </p>
+
+        <div class="video-container video-wrapper">
+          <iframe
+            width="853"
+            height="480"
+            src="https://www.youtube.com/embed/3RjQznt-8kE"
+            title="Materialize tutorial"
+            frameborder="0"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space green lighten-5">
+      <div class="container">
+        <h2 class="center teal-text text-darken-3">Why This Page Fits GlowCycle</h2>
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card-panel white z-depth-1">
+              <i class="material-icons teal-text text-darken-2">eco</i>
+              <h3>Sustainability</h3>
+              <p>The green and teal palette reflects GlowCycle’s eco-friendly mission.</p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card-panel white z-depth-1">
+              <i class="material-icons teal-text text-darken-2">opacity</i>
+              <h3>Skincare Focus</h3>
+              <p>The content stays centered on refillable skincare and clean ingredients.</p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card-panel white z-depth-1">
+              <i class="material-icons teal-text text-darken-2">devices</i>
+              <h3>User Experience</h3>
+              <p>Materialize helps the page feel modern, responsive, and more visual.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 GlowCycle Refill Bar | Materialize Page</p>
+  </footer>
+
+  <!-- Materialize JavaScript CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
