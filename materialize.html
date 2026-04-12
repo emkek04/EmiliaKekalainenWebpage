@@ -206,6 +206,150 @@
         </div>
       </div>
     </section>
+
+    <section class="section-space">
+  <div class="container">
+    <h2 class="center teal-text text-darken-3">GlowCycle Interactive Features</h2>
+    <p class="center grey-text text-darken-1">
+      These Materialize JavaScript features were customized to match GlowCycle’s refill skincare brand.
+    </p>
+
+    <!-- Radio Button Interaction -->
+    <div id="routine-section" class="section">
+      <h4 class="teal-text text-darken-2">Choose Your Favorite Refill Routine</h4>
+      <form>
+        <p>
+          <label>
+            <input name="routine" type="radio" value="Cleanser" onclick="displayRoutine()">
+            <span>Cleanser</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="routine" type="radio" value="Serum" onclick="displayRoutine()">
+            <span>Serum</span>
+          </label>
+        </p>
+        <p>
+          <label>
+            <input name="routine" type="radio" value="Moisturizer" onclick="displayRoutine()">
+            <span>Moisturizer</span>
+          </label>
+        </p>
+      </form>
+      <div id="routine-response" class="teal-text text-darken-3"></div>
+    </div>
+
+    <!-- Subscribe Interaction -->
+    <div id="feedback-section" class="section">
+      <h4 class="teal-text text-darken-2">Join the GlowCycle Mailing List</h4>
+      <form onsubmit="submitEmail(event)">
+        <div class="input-field">
+          <input id="email" type="email" required>
+          <label for="email">Email</label>
+        </div>
+        <button type="submit" class="btn waves-effect waves-light teal darken-2">Subscribe</button>
+      </form>
+      <div id="email-response" class="teal-text text-darken-3"></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Basic Carousel -->
+    <section id="basic" class="section">
+      <h4 class="teal-text text-darken-2">Featured Refill Essentials</h4>
+      <div class="controls">
+        <button id="basicPrev" class="btn waves-effect teal">Prev</button>
+        <button id="basicNext" class="btn waves-effect teal">Next</button>
+        <button id="basicGo3" class="btn waves-effect teal">Go to #3</button>
+      </div>
+
+      <div class="carousel" id="basicCarousel">
+        <a class="carousel-item" href="#one!">
+          <img src="images/GlowCycle-img1.png" alt="GlowCycle refill cleanser">
+        </a>
+        <a class="carousel-item" href="#two!">
+          <img src="images/GlowCycle-img2.png" alt="GlowCycle refill serum">
+        </a>
+        <a class="carousel-item" href="#three!">
+          <img src="images/GlowCycle-img3.png" alt="GlowCycle barrier moisturizer">
+        </a>
+        <a class="carousel-item" href="#four!">
+          <img src="images/GlowCycle-img1.png" alt="GlowCycle refill station">
+        </a>
+        <a class="carousel-item" href="#five!">
+          <img src="images/GlowCycle-img2.png" alt="Customer using refill skincare">
+        </a>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Collapsible -->
+    <section id="collapsible" class="section">
+      <h4 class="teal-text text-darken-2">GlowCycle FAQs</h4>
+      <ul class="collapsible" id="demoCollapsible">
+        <li class="active">
+          <div class="collapsible-header">
+            <i class="material-icons">eco</i>
+            What is a refill bar?
+          </div>
+          <div class="collapsible-body">
+            <p>
+              A refill bar allows customers to reuse their skincare containers instead of buying new packaging each time.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">opacity</i>
+            Why choose refillable skincare?
+          </div>
+          <div class="collapsible-body">
+            <p>
+              Refillable skincare helps reduce waste while keeping daily beauty routines simple and practical.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">autorenew</i>
+            How often should I restock?
+          </div>
+          <div class="collapsible-body">
+            <p>
+              Restocking depends on your routine, but many customers refill every few weeks based on product use.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Full Width Slider -->
+    <section id="fullwidth" class="section">
+      <h4 class="teal-text text-darken-2">GlowCycle Refill Experience</h4>
+      <div class="controls">
+        <button id="fwPrev" class="btn waves-effect teal">Prev</button>
+        <button id="fwNext" class="btn waves-effect teal">Next</button>
+        <button id="fwToggle" class="btn waves-effect teal">Toggle Autoplay</button>
+      </div>
+
+      <div class="carousel carousel-slider" id="fullWidthCarousel">
+        <a class="carousel-item" href="#slide1!">
+          <img src="images/GlowCycle-img1.png" alt="GlowCycle refill display">
+        </a>
+        <a class="carousel-item" href="#slide2!">
+          <img src="images/GlowCycle-img2.png" alt="Customer refilling skincare bottle">
+        </a>
+        <a class="carousel-item" href="#slide3!">
+          <img src="images/GlowCycle-img3.png" alt="GlowCycle skincare collection">
+        </a>
+      </div>
+    </section>
+  </div>
+</section>
   </main>
 
   <footer>
