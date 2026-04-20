@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery | GlowCycle Refill Bar</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- REQUIRED jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <style>
+    body {
+      background-color: #f4fbf8;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: #b2dfdb;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #80cbc4;
+    }
+
+    nav a {
+      color: #2b1a52;
+      font-weight: bold;
+      margin: 0 8px;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    section {
+      background: white;
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    .highlight {
+      background: #fff59d;
+      padding: 4px 8px;
+      border-radius: 6px;
+    }
+
+    .glow-btn {
+      background: #26a69a;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      margin: 8px 8px 8px 0;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .glow-btn:hover {
+      background: #1f8d83;
+    }
+
+    #tipBox, #reminderBox {
+      margin-top: 15px;
+      padding: 15px;
+      background: #e0f2f1;
+      border-left: 5px solid #26a69a;
+      border-radius: 10px;
+    }
+
+    ul {
+      margin-top: 10px;
+    }
+
+    input {
+      padding: 8px;
+      margin-right: 8px;
+    }
+
+    .dark {
+      background: #1a1a1a;
+      color: white;
+    }
+
+    .dark section {
+      background: #2b2b2b;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>GlowCycle Refill Bar</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="menu.html">Menu</a> |
+      <a href="materialize.html">Materialize</a> |
+      <a href="jquery.html">jQuery</a> |
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>GlowCycle jQuery Experience</h2>
+      <p>
+        This page demonstrates interactive features using jQuery to improve user experience.
+        These features help users explore refill skincare tips, create a checklist,
+        and interact with GlowCycle content.
+      </p>
+      <img src="images/GlowCycle-img1.png" alt="GlowCycle refill display" style="width:100%; max-width:500px; border-radius:12px;">
+    </section>
+
+    <!-- TOGGLE -->
+    <section>
+      <h2>Skincare Tip</h2>
+      <p>Click to show or hide a refill skincare tip.</p>
+      <button id="toggleTipBtn" class="glow-btn">Show / Hide Tip</button>
+
+      <div id="tipBox">
+        Refillable skincare helps reduce waste while keeping your routine simple and effective.
+      </div>
+    </section>
+
+    <!-- FADE -->
+    <section>
+      <h2>Refill Reminder</h2>
+      <button id="fadeReminderBtn" class="glow-btn">Fade Reminder</button>
+
+      <div id="reminderBox">
+        Bring your empty containers back every few weeks for a quick refill.
+      </div>
+    </section>
+
+    <!-- APPEND -->
+    <section>
+      <h2>Refill Checklist</h2>
+      <button id="addItemBtn" class="glow-btn">Add Item</button>
+      <ul id="checklist"></ul>
+    </section>
+
+    <!-- INPUT -->
+    <section>
+      <h2>Join GlowCycle</h2>
+      <input type="text" id="nameInput" placeholder="Enter your name">
+      <button id="submitNameBtn" class="glow-btn">Submit</button>
+      <p id="outputMessage"></p>
+    </section>
+
+    <!-- DARK MODE -->
+    <section>
+      <h2>Display Mode</h2>
+      <button id="darkModeBtn" class="glow-btn">Toggle Dark Mode</button>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 GlowCycle Refill Bar | jQuery Page</p>
+  </footer>
+
+  <!-- jQuery SCRIPT -->
+  <script>
+    $(document).ready(function () {
+
+      // Highlight headings
+      $("h2").addClass("highlight");
+
+      // Toggle tip
+      $("#toggleTipBtn").click(function () {
+        $("#tipBox").toggle();
+      });
+
+      // Fade reminder
+      $("#fadeReminderBtn").click(function () {
+        $("#reminderBox").fadeToggle();
+      });
+
+      // Add checklist items
+      let counter = 1;
+      $("#addItemBtn").click(function () {
+        $("#checklist").append("<li>Refill item " + counter + "</li>");
+        counter++;
+      });
+
+      // Input interaction
+      $("#submitNameBtn").click(function () {
+        let name = $("#nameInput").val();
+        $("#outputMessage").text("Welcome to GlowCycle, " + name + "!");
+      });
+
+      // Dark mode
+      $("#darkModeBtn").click(function () {
+        $("body").toggleClass("dark");
+      });
+
+    });
+  </script>
+
+</body>
+</html>
