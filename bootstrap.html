@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap | GlowCycle Refill Bar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>GlowCycle Bootstrap Page</h1>
+
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="menu.html">Menu</a> |
+      <a href="materialize.html">Materialize</a> |
+      <a href="jquery.html">jQuery</a> |
+      <a href="bootstrap.html">Bootstrap</a> |
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container-fluid p-5 bg-success text-white text-center">
+    <h1>GlowCycle Refill Bar</h1>
+    <p>Bootstrap interactions for a sustainable skincare website.</p>
+  </div>
+
+  <main class="container mt-5">
+
+    <section class="mb-5">
+      <h2>Bootstrap Product Cards</h2>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="images/GlowCycle-img1.png" class="card-img-top" alt="GlowCycle refill cleanser">
+            <div class="card-body">
+              <h5 class="card-title">Oat Milk Cleanser</h5>
+              <p class="card-text">A gentle cleanser for sensitive skin.</p>
+              <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#productModal">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="images/GlowCycle-img2.png" class="card-img-top" alt="Customer refilling skincare">
+            <div class="card-body">
+              <h5 class="card-title">Vitamin C Serum</h5>
+              <p class="card-text">A brightening serum for dull skin.</p>
+              <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#productModal">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="card">
+            <img src="images/GlowCycle-img3.png" class="card-img-top" alt="GlowCycle skincare products">
+            <div class="card-body">
+              <h5 class="card-title">Barrier Moisturizer</h5>
+              <p class="card-text">A moisturizer that supports hydration.</p>
+              <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#productModal">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interaction 1: Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title">GlowCycle Refill Products</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body">
+            GlowCycle products are refillable, simple to use, and designed to reduce single-use plastic waste.
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Interaction 2: Carousel -->
+    <section class="mb-5">
+      <h2>Bootstrap Carousel</h2>
+
+      <div id="glowCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/GlowCycle-img1.png" class="d-block w-100" alt="GlowCycle refill bar">
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/GlowCycle-img2.png" class="d-block w-100" alt="Customer refilling skincare bottle">
+          </div>
+
+          <div class="carousel-item">
+            <img src="images/GlowCycle-img3.png" class="d-block w-100" alt="GlowCycle product display">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#glowCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#glowCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- Interaction 3: Accordion -->
+    <section class="mb-5">
+      <h2>Bootstrap Accordion</h2>
+
+      <div class="accordion" id="glowAccordion">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              What is a refill bar?
+            </button>
+          </h2>
+
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#glowAccordion">
+            <div class="accordion-body">
+              A refill bar lets customers reuse containers instead of buying new plastic packaging every time.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Why choose refillable skincare?
+            </button>
+          </h2>
+
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#glowAccordion">
+            <div class="accordion-body">
+              Refillable skincare helps reduce waste while still giving customers quality skincare products.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interaction 4: Form -->
+    <section class="mb-5">
+      <h2>Bootstrap Form</h2>
+
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+
+        <div class="mb-3">
+          <label for="product" class="form-label">Favorite Product</label>
+          <select class="form-select" id="product">
+            <option selected>Choose one</option>
+            <option>Oat Milk Cleanser</option>
+            <option>Vitamin C Serum</option>
+            <option>Barrier Repair Moisturizer</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 GlowCycle Refill Bar | Bootstrap Page</p>
+  </footer>
+
+</body>
+</html>
